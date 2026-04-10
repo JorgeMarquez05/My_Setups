@@ -29,6 +29,19 @@ fi
 
 # =========================
 
+# 📝 Vim
+
+# =========================
+
+if command -v vim >/dev/null 2>&1; then
+  echo "✅ Vim ya está instalado: $(vim --version | head -n 1)"
+else
+  echo "📝 Instalando Vim..."
+  sudo apt install -y vim
+fi
+
+# =========================
+
 # 🐳 Docker
 
 # =========================
